@@ -1,14 +1,14 @@
-graduate College
-pass the Class
+upload Project
+do Project
+get Grade
+upload Project
 learn Cool
 read the Cool tutorial
-get Grade
-upload Project
+graduate College
+pass the Class
 do Project
 learn Cool
-upload Project
-do Project
-pass the Class
-get Grade
 get a Job
 graduate College
+pass the Class
+get Grade

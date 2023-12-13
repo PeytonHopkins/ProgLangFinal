@@ -13,15 +13,19 @@ class Node:
 
 def topSort(node):
     node.visited = True
+    foundMatch = False
     for checkNode in Nodes:
         if checkNode.dependentTask == node.task and not checkNode.visited:
+            foundMatch = True
             topSort(checkNode)
             stack.append(node)
+    if not foundMatch:
+        stack.append(node)
 
 
 Nodes = []
 
-debug = True
+debug = False # This is to make testing faster
 
 if not debug:
     print("Please input task values. (Use Ctrl+D to submit.)")
@@ -53,12 +57,16 @@ for line in tasksStandardInput:
     isEven = not isEven
 
 stack = []
-visited = [False for i in range(Nodes.__len__())]
 
 index = 0
 for node in Nodes:
     if not node.visited:
         topSort(node)
 
-for node in stack:
-    print(node.task, node.dependentTask)
+
+index = 1
+for node in stack[::-1]:    # iterate through the stack in reverse order
+    print(node.dependentTask)
+    if index == stack.__len__():
+        print(node.task)
+    index += 1
