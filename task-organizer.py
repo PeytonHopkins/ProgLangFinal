@@ -28,7 +28,7 @@ Nodes = []
 debug = False # This is to make testing faster
 
 if not debug:
-    print("Please input task values. (Use Ctrl+D to submit.)")
+    print("Please input task values.")
     tasksStandardInput = sys.__stdin__.readlines()  # Take users multiline input of tasks & dependent tasks
 else:
     file = open('testcase.txt', 'r')
