@@ -1,0 +1,14 @@
+upload Project
+do Project
+get Grade
+upload Project
+learn Cool
+read the Cool tutorial
+graduate College
+pass the Class
+do Project
+learn Cool
+get a Job
+graduate College
+pass the Class
+get Grade
