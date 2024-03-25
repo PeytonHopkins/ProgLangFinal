@@ -1,14 +1,11 @@
 # Peyton Hopkins
-
 import sys
-
 
 class Node:
     def __init__(self, task, dependentTask):
         self.task = task
         self.dependentTask = dependentTask
         self.visited = False
-        self.next = None
 
 
 def topSort(node):
@@ -25,7 +22,7 @@ def topSort(node):
 
 Nodes = []
 
-debug = False # This is to make testing faster
+debug = True # This is to make testing faster
 
 if not debug:
     print("Please input task values.")
@@ -58,7 +55,6 @@ for line in tasksStandardInput:
 
 stack = []
 
-index = 0
 for node in Nodes:
     if not node.visited:
         topSort(node)
